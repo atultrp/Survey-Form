@@ -1,0 +1,95 @@
+/* font-family: 'Merienda', cursive;
+font-family: 'Merriweather', serif; */
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1549490316-686f9b5d359f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+    text-align: center;
+    color: rgb(7, 7, 44);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 7% 0 2%;
+    font-family: 'Merienda', cursive;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#description {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+#survey-form {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.input-class {
+    padding: 0.625rem;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 3%;
+    transition: width 0.4s ease-in-out;
+}
+
+.role {
+    padding-top: 2%;
+}
+
+#comments {
+    min-height: 60px;
+    width: 50%;
+    padding: 0.625rem;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+#submit {
+    width: 50%;
+    padding: 0.75rem;
+    background: black;
+    color: white;
+    border-radius: 2px;
+}
+
+#submit:hover {
+    background-color: #075264;
+}
+
+.middle-one {
+    margin: 3% 0 5%;
+}
+
+button {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #description {
+        font-size: 0.8rem;
+    }
+    #survey-form {
+        font-size: 1rem;
+    }
+    .input-class {
+        font-size: 0.6rem;
+    }
+    #comments {
+        font-size: 0.6rem;
+    }
+    button {
+        font-size: 0.8rem;
+    }
+}

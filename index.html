@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">" Thank you for taking the time to help us improve the platform."</p>
+    </header>
+
+    <form id="survey-form">
+        <section class="upper-one">
+            <label class="label-class" for="name">Name</label>
+            <input class="input-class" type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label class="label-class" for="email">Email</label>
+            <input class="input-class" type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required="">
+            <label class="label-class" for="age">Age<span>(optional)</span></label>
+            <input class="input-class" type="number" name="age" id="number" min="10" max="100" placeholder="Age">
+            <p class="Role">Which option best describes your current role?</p>
+            <select class="input-class" id="dropdown" name="role" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+
+        </section>
+
+        <section class="middle-one">
+            <p>Am I intelligent?</p>
+            <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure
+      </label>
+        </section>
+        <section class="end-one">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+            <button type="submit" id="submit">
+        Submit
+      </button>
+            </div>
+        </section>
+    </form>
+</body>
+
+</html>
